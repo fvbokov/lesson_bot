@@ -19,6 +19,7 @@ class lesson_day:
         return f'{self.date.day}.{self.date.month}.{self.date.year}: {self.lesson_count} {word} ({self.lesson_time})'
 
     def __lt__(self, other):
+        print(other)
         return self.date.day < other.date.day
     def __gt__(self, other):
         return self.date.day > other.date.day  
